@@ -1,0 +1,8 @@
+﻿  ofApp.cpp
+c:\users\icq4ever\documents\of_098\libs\openframeworks\math\ofVec3f.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+c:\users\icq4ever\documents\of_098\libs\openframeworks\math\ofVec2f.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     Creating library bin\assettoCorsaMemClient.lib and object bin\assettoCorsaMemClient.exp
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  assettoCorsaMemClient.vcxproj -> C:\Users\icq4ever\Documents\oF_098\addons\ofxSharedMemory\assettoCorsaMemClient\bin\assettoCorsaMemClient.exe
+  
+  	                   9	C:\Users\icq4ever\Documents\oF_098\export\vs\Win32\
