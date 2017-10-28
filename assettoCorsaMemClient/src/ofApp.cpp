@@ -92,119 +92,119 @@ void ofApp::draw(){
 
 	stringstream physicsOutput, graphicsOutput, fileStaticOutput;
 	if (isPhysicsConnected && isGraphicsConnected && isFileStaticConnected) {
-		physicsOutput << "PHYSICS ====================================" << endl
-			<< "packetId" << physicsData->packetId << endl
-			<< "gas" << physicsData->gas << endl
-			<< "brake" << physicsData->brake << endl
-			<< "fuel" << physicsData->fuel << endl
-			<< "gear" << physicsData->gear << endl
-			<< "rpms" << physicsData->rpms << endl
-			<< "steerAngle" << physicsData->steerAngle << endl
-			<< "speedKmh" << physicsData->speedKmh << endl
-			<< "velocity" << physicsData->velocity << endl
-			<< "accG" << physicsData->accG << endl
-			<< "wheelSlip" << physicsData->wheelSlip << endl
-			<< "wheelLoad" << physicsData->wheelLoad << endl
-			<< "wheelsPressure" << physicsData->wheelsPressure << endl
-			<< "wheelAngularSpeed" << physicsData->wheelAngularSpeed << endl
-			<< "tyreWear" << physicsData->tyreWear << endl
-			<< "tyreDirtyLevel" << physicsData->tyreDirtyLevel << endl
-			<< "tyreCoreTemperature" << physicsData->tyreCoreTemperature << endl
-			<< "camberRAD" << physicsData->camberRAD << endl
-			<< "suspensionTravel" << physicsData->suspensionTravel << endl
-			<< "drs" << physicsData->drs << endl
-			<< "tc" << physicsData->tc << endl
-			<< "heading" << physicsData->heading << endl
-			<< "pitch" << physicsData->pitch << endl
-			<< "roll" << physicsData->roll << endl
-			<< "cgHeight" << physicsData->cgHeight << endl
-			<< "carDamage" << physicsData->carDamage << endl
-			<< "numberOfTyresOut" << physicsData->numberOfTyresOut << endl
-			<< "pitLimiterOn" << physicsData->pitLimiterOn << endl
-			<< "abs" << physicsData->abs << endl
-			<< "kersCharge" << physicsData->kersCharge << endl
-			<< "kersInput" << physicsData->kersInput << endl
-			<< "autoShifterOn" << physicsData->autoShifterOn << endl
-			<< "rideHeight" << physicsData->rideHeight << endl
-			<< "turboBoost" << physicsData->turboBoost << endl
-			<< "ballast" << physicsData->ballast << endl
-			<< "airDensity" << physicsData->airDensity << endl
-			<< "airTemp" << physicsData->airTemp << endl
-			<< "roadTemp" << physicsData->roadTemp << endl
-			<< "localAngularVel" << physicsData->localAngularVel << endl
-			<< "finalFF" << physicsData->finalFF << endl
-			<< "performanceMeter" << physicsData->performanceMeter << endl
-			<< "engineBrake" << physicsData->engineBrake << endl
-			<< "ersRecoveryLevel" << physicsData->ersRecoveryLevel << endl
-			<< "ersPowerLevel" << physicsData->ersPowerLevel << endl
-			<< "ersHeatCharging" << physicsData->ersHeatCharging << endl
-			<< "ersIsCharging" << physicsData->ersIsCharging << endl
-			<< "kersCurrentKJ" << physicsData->kersCurrentKJ << endl
-			<< "drsAvailable" << physicsData->drsAvailable << endl
-			<< "drsEnabled" << physicsData->drsEnabled << endl;
+		physicsOutput << "PHYSICS ====================================" << endl << endl
+			<< "packetId" << '\t' << physicsData->packetId << endl
+			<< "gas" << '\t' << physicsData->gas << endl
+			<< "brake" << '\t' << physicsData->brake << endl
+			<< "fuel" << '\t' << physicsData->fuel << endl
+			<< "gear" << '\t' << physicsData->gear << endl
+			<< "rpms" << '\t' << physicsData->rpms << endl
+			<< "steerAngle" << '\t' << physicsData->steerAngle << endl
+			<< "speedKmh" << '\t' << physicsData->speedKmh << endl
+			<< "velocity" << '\t' << physicsData->velocity << endl
+			<< "accG" << '\t' << physicsData->accG << endl
+			<< "wheelSlip" << '\t' << physicsData->wheelSlip << endl
+			<< "wheelLoad" << '\t' << physicsData->wheelLoad << endl
+			<< "wheelsPressure" << '\t' << physicsData->wheelsPressure << endl
+			<< "wheelAngularSpeed" << '\t' << physicsData->wheelAngularSpeed << endl
+			<< "tyreWear" << '\t' << physicsData->tyreWear << endl
+			<< "tyreDirtyLevel" << '\t' << physicsData->tyreDirtyLevel << endl
+			<< "tyreCoreTemperature" << '\t' << physicsData->tyreCoreTemperature << endl
+			<< "camberRAD" << '\t' << physicsData->camberRAD << endl
+			<< "suspensionTravel" << '\t' << physicsData->suspensionTravel << endl
+			<< "drs" << '\t' << physicsData->drs << endl
+			<< "tc" << '\t' << physicsData->tc << endl
+			<< "heading" << '\t' << physicsData->heading << endl
+			<< "pitch" << '\t' << physicsData->pitch << endl
+			<< "roll" << '\t' << physicsData->roll << endl
+			<< "cgHeight" << '\t' << physicsData->cgHeight << endl
+			<< "carDamage" << '\t' << physicsData->carDamage << endl
+			<< "numberOfTyresOut" << '\t' << physicsData->numberOfTyresOut << endl
+			<< "pitLimiterOn" << '\t' << physicsData->pitLimiterOn << endl
+			<< "abs" << '\t' << physicsData->abs << endl
+			<< "kersCharge" << '\t' << physicsData->kersCharge << endl
+			<< "kersInput" << '\t' << physicsData->kersInput << endl
+			<< "autoShifterOn" << '\t' << physicsData->autoShifterOn << endl
+			<< "rideHeight" << '\t' << physicsData->rideHeight << endl
+			<< "turboBoost" << '\t' << physicsData->turboBoost << endl
+			<< "ballast" << '\t' << physicsData->ballast << endl
+			<< "airDensity" << '\t' << physicsData->airDensity << endl
+			<< "airTemp" << '\t' << physicsData->airTemp << endl
+			<< "roadTemp" << '\t' << physicsData->roadTemp << endl
+			<< "localAngularVel" << '\t' << physicsData->localAngularVel << endl
+			<< "finalFF" << '\t' << physicsData->finalFF << endl
+			<< "performanceMeter" << '\t' << physicsData->performanceMeter << endl
+			<< "engineBrake" << '\t' << physicsData->engineBrake << endl
+			<< "ersRecoveryLevel" << '\t' << physicsData->ersRecoveryLevel << endl
+			<< "ersPowerLevel" << '\t' << physicsData->ersPowerLevel << endl
+			<< "ersHeatCharging" << '\t' << physicsData->ersHeatCharging << endl
+			<< "ersIsCharging" << '\t' << physicsData->ersIsCharging << endl
+			<< "kersCurrentKJ" << '\t' << physicsData->kersCurrentKJ << endl
+			<< "drsAvailable" << '\t' << physicsData->drsAvailable << endl
+			<< "drsEnabled" << '\t' << physicsData->drsEnabled << endl;
 
-		graphicsOutput << "GRAPHICS INFO =============================" << endl
-			<< "packetID" << graphicsData->packetId << endl
-			<< "STATUS " << graphicsData->status << endl
-			<< "session" << graphicsData->session << endl
-			<< "completed laps" << graphicsData->completedLaps << endl
-			<< "position" << graphicsData->position << endl
-			<< "current time s" << graphicsData->currentTime << endl
-			<< "current time" << graphicsData->iCurrentTime << endl
-			<< "last time" << graphicsData->iLastTime << endl
-			<< "best time" << graphicsData->iBestTime << endl
-			<< "sessionTimeLeft" << graphicsData->sessionTimeLeft << endl
-			<< "distanceTraveled" << graphicsData->distanceTraveled << endl
-			<< "isInPit" << graphicsData->isInPit << endl
-			<< "currentSectorIndex" << graphicsData->currentSectorIndex << endl
-			<< "lastSectorTime" << graphicsData->lastSectorTime << endl
-			<< "numberOfLaps" << graphicsData->numberOfLaps << endl
-			<< "TYRE COMPOUND : " << graphicsData->tyreCompound << endl
-			<< "replayMult" << graphicsData->replayTimeMultiplier << endl
-			<< "normalizedCarPosition" << graphicsData->normalizedCarPosition << endl
-			<< "carCoordinates" << graphicsData->carCoordinates << endl;
+		graphicsOutput << "GRAPHICS INFO =============================" << endl << endl
+			<< "packetID" << '\t' << graphicsData->packetId << endl
+			<< "STATUS " << '\t' << graphicsData->status << endl
+			<< "session" << '\t' << graphicsData->session << endl
+			<< "completed laps" << '\t' << graphicsData->completedLaps << endl
+			<< "position" << '\t' << graphicsData->position << endl
+			<< "current time s" << '\t' << graphicsData->currentTime << endl
+			<< "current time" << '\t' << graphicsData->iCurrentTime << endl
+			<< "last time" << '\t' << graphicsData->iLastTime << endl
+			<< "best time" << '\t' << graphicsData->iBestTime << endl
+			<< "sessionTimeLeft" << '\t' << graphicsData->sessionTimeLeft << endl
+			<< "distanceTraveled" << '\t' << graphicsData->distanceTraveled << endl
+			<< "isInPit" << '\t' << graphicsData->isInPit << endl
+			<< "currentSectorIndex" << '\t' << graphicsData->currentSectorIndex << endl
+			<< "lastSectorTime" << '\t' << graphicsData->lastSectorTime << endl
+			<< "numberOfLaps" << '\t' << graphicsData->numberOfLaps << endl
+			<< "TYRE COMPOUND : " << '\t' << graphicsData->tyreCompound << endl
+			<< "replayMult" << '\t' << graphicsData->replayTimeMultiplier << endl
+			<< "normalizedCarPosition" << '\t' << graphicsData->normalizedCarPosition << endl
+			<< "carCoordinates" << '\t' << graphicsData->carCoordinates << endl;
 
-		fileStaticOutput << "STATIC INFO =============================" << endl
-			<< "smVersion" << fileStaticData->smVersion << endl
-			<< "acVersion" << fileStaticData->acVersion << endl
-			<< "numberOfSessions" << fileStaticData->numberOfSessions << endl
-			<< "numCars" << fileStaticData->numCars << endl
-			<< "carModel" << fileStaticData->carModel << endl
-			<< "track" << fileStaticData->track << endl
-			<< "playerName" << fileStaticData->playerName << endl
-			<< "playerSurname" << fileStaticData->playerSurname << endl
-			<< "playerNick" << fileStaticData->playerNick << endl
-			<< "sectorCount" << fileStaticData->sectorCount << endl
-			<< "maxTorque" << fileStaticData->maxTorque << endl
-			<< "maxPower" << fileStaticData->maxPower << endl
-			<< "maxRpm" << fileStaticData->maxRpm << endl
-			<< "maxFuel" << fileStaticData->maxFuel << endl
-			<< "suspensionMaxTravel" << fileStaticData->suspensionMaxTravel << endl
-			<< "tyreRadius" << fileStaticData->tyreRadius << endl
-			<< "maxTurboBoost" << fileStaticData->maxTurboBoost << endl
-			<< "deprecated_1" << fileStaticData->deprecated_1 << endl
-			<< "deprecated_2" << fileStaticData->deprecated_2 << endl
-			<< "penaltiesEnabled" << fileStaticData->penaltiesEnabled << endl
-			<< "aidFuelRate" << fileStaticData->aidFuelRate << endl
-			<< "aidTireRate" << fileStaticData->aidTireRate << endl
-			<< "aidMechanicalDamage" << fileStaticData->aidMechanicalDamage << endl
-			<< "aidAllowTyreBlankets" << fileStaticData->aidAllowTyreBlankets << endl
-			<< "aidStability" << fileStaticData->aidStability << endl
-			<< "aidAutoClutch" << fileStaticData->aidAutoClutch << endl
-			<< "aidAutoBlip" << fileStaticData->aidAutoBlip << endl
-			<< "hasDRS" << fileStaticData->hasDRS << endl
-			<< "hasERS" << fileStaticData->hasERS << endl
-			<< "hasKERS" << fileStaticData->hasKERS << endl
-			<< "kersMaxJ" << fileStaticData->kersMaxJ << endl
-			<< "engineBrakeSettingsCount" << fileStaticData->engineBrakeSettingsCount << endl
-			<< "ersPowerControllerCount" << fileStaticData->ersPowerControllerCount << endl
+		fileStaticOutput << "STATIC INFO =============================" << endl << endl
+			<< "smVersion" << '\t' << fileStaticData->smVersion << endl
+			<< "acVersion" << '\t' << fileStaticData->acVersion << endl
+			<< "numberOfSessions" << '\t' << fileStaticData->numberOfSessions << endl
+			<< "numCars" << '\t' << fileStaticData->numCars << endl
+			<< "carModel" << '\t' << fileStaticData->carModel << endl
+			<< "track" << '\t' << fileStaticData->track << endl
+			<< "playerName" << '\t' << fileStaticData->playerName << endl
+			<< "playerSurname" << '\t' << fileStaticData->playerSurname << endl
+			<< "playerNick" << '\t' << fileStaticData->playerNick << endl
+			<< "sectorCount" << '\t' << fileStaticData->sectorCount << endl
+			<< "maxTorque" << '\t' << fileStaticData->maxTorque << endl
+			<< "maxPower" << '\t' << fileStaticData->maxPower << endl
+			<< "maxRpm" << '\t' << fileStaticData->maxRpm << endl
+			<< "maxFuel" << '\t' << fileStaticData->maxFuel << endl
+			<< "suspensionMaxTravel" << '\t' << fileStaticData->suspensionMaxTravel << endl
+			<< "tyreRadius" << '\t' << fileStaticData->tyreRadius << endl
+			<< "maxTurboBoost" << '\t' << fileStaticData->maxTurboBoost << endl
+			<< "deprecated_1" << '\t' << fileStaticData->deprecated_1 << endl
+			<< "deprecated_2" << '\t' << fileStaticData->deprecated_2 << endl
+			<< "penaltiesEnabled" << '\t' << fileStaticData->penaltiesEnabled << endl
+			<< "aidFuelRate" << '\t' << fileStaticData->aidFuelRate << endl
+			<< "aidTireRate" << '\t' << fileStaticData->aidTireRate << endl
+			<< "aidMechanicalDamage" << '\t' << fileStaticData->aidMechanicalDamage << endl
+			<< "aidAllowTyreBlankets" << '\t' << fileStaticData->aidAllowTyreBlankets << endl
+			<< "aidStability" << '\t' << fileStaticData->aidStability << endl
+			<< "aidAutoClutch" << '\t' << fileStaticData->aidAutoClutch << endl
+			<< "aidAutoBlip" << '\t' << fileStaticData->aidAutoBlip << endl
+			<< "hasDRS" << '\t' << fileStaticData->hasDRS << endl
+			<< "hasERS" << '\t' << fileStaticData->hasERS << endl
+			<< "hasKERS" << '\t' << fileStaticData->hasKERS << endl
+			<< "kersMaxJ" << '\t' << fileStaticData->kersMaxJ << endl
+			<< "engineBrakeSettingsCount" << '\t' << fileStaticData->engineBrakeSettingsCount << endl
+			<< "ersPowerControllerCount" << '\t' << fileStaticData->ersPowerControllerCount << endl
 
-			<< "trackSPlineLength" << fileStaticData->trackSPlineLength << endl
-			<< "trackConfiguration" << fileStaticData->trackConfiguration << endl;
+			<< "trackSPlineLength" << '\t' << fileStaticData->trackSPlineLength << endl
+			<< "trackConfiguration" << '\t' << fileStaticData->trackConfiguration << endl;
 
 		ofDrawBitmapStringHighlight(physicsOutput.str(), 20, 20);
-		ofDrawBitmapStringHighlight(graphicsOutput.str(), 180, 20);
-		ofDrawBitmapStringHighlight(fileStaticOutput.str(), 340, 20);
+		ofDrawBitmapStringHighlight(graphicsOutput.str(), 390, 20);
+		ofDrawBitmapStringHighlight(fileStaticOutput.str(), 750, 20);
 		
 	} else {
 		ofDrawBitmapStringHighlight("ACS is not running", 20, 20);

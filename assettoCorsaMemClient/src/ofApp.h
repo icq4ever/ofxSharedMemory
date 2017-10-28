@@ -37,22 +37,36 @@ class SPageFilePhysics {
 public:
 
 	int packetId = 0;
+	
+	// input status
+	float steerAngle = 0;
 	float gas = 0;
 	float brake = 0;
+	
 	float fuel = 0;
+	
+	float speedKmh = 0;
 	int gear = 0;
 	int rpms = 0;
-	float steerAngle = 0;
-	float speedKmh = 0;
+	
+	float tyreCoreTemperature[4];
+	
 	float velocity[3];
 	float accG[3];
+	
+	
+	// environment
+	float airDensity = 0;
+	float airTemp = 0;
+	float roadTemp = 0;
+	
 	float wheelSlip[4];
 	float wheelLoad[4];
 	float wheelsPressure[4];
 	float wheelAngularSpeed[4];
 	float tyreWear[4];
 	float tyreDirtyLevel[4];
-	float tyreCoreTemperature[4];
+	
 	float camberRAD[4];
 	float suspensionTravel[4];
 	float drs = 0;
@@ -71,9 +85,7 @@ public:
 	float rideHeight[2];
 	float turboBoost = 0;
 	float ballast = 0;
-	float airDensity = 0;
-	float airTemp = 0;
-	float roadTemp = 0;
+	
 	float localAngularVel[3];
 	float finalFF = 0;
 	float performanceMeter = 0;
